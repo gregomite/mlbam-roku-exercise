@@ -3,7 +3,7 @@
 
     <interface>
         <field id="content" type="node" />
-        <field id="jsonFeed" type="string" onChange="jsonFeedChanged" />
+        <field id="jsonFeed" type="string" />
     </interface>
 
     <script type="text/brightscript" uri="pkg:/components/JsonSlurper.brs"/>
