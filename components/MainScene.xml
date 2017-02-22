@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="MainScene" extends="Scene" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://devtools.web.roku.com/schema/RokuSceneGraph.xsd">
+
+    <interface>
+        <!-- epoch time for 5/20/2016 -->
+        <field id="epoch" type="integer" value="1463706000" onChange="onDateChange" />
+    </interface>
+
+    <script type="text/brightscript" uri="pkg:/components/MainScene.brs" />
+
+    <children>
+    
+        <Label
+            id="gamedate"
+            translation="[1080,50]"
+            font="font:LargeBoldSystemFont"
+        />
+
+        <RowList
+            id="rowlist"
+            translation="[50,350]"
+            itemComponentName="GameItem"
+            numRows="1"
+            rowItemSize="[[124,70]]" 
+            rowItemSpacing="[[20,0]]"
+            itemSize="[1770,270]"
+            drawFocusFeedback="false"
+            failedBitmapUri="pkg:/images/mlb-logo.gif"
+        />
+
+    </children>
+</component>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="JsonSlurper" extends="Task" xsi:noNamespaceSchemaLocation="https://devtools.web.roku.com/schema/RokuSceneGraph.xsd">
+
+    <interface>
+        <field id="content" type="node" />
+        <field id="jsonFeed" type="string" onChange="jsonFeedChanged" />
+    </interface>
+
+    <script type="text/brightscript" uri="pkg:/components/JsonSlurper.brs"/>
+
+</component>

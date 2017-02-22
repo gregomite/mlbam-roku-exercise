@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="GameItem" extends="Group" xsi:noNamespaceSchemaLocation="https://devtools.web.roku.com/schema/RokuSceneGraph.xsd">
+
+    <interface>
+        <field id="width" type="float" onChange="updateLayout" />
+        <field id="height" type="float" onChange="updateLayout" />
+        <field id="itemContent" type="node" onChange="itemContentChanged" />
+        <field id="focusPercent" type="float" onChange="showFocus" /> 
+    </interface>
+
+    <script type="text/brightscript" uri="pkg:/components/GameItem.brs"/>
+
+    <children>
+
+        <Group translation="[20,0]">
+            <Poster
+                id="poster"
+                translation = "[10,90]"
+                scaleRotateCenter="[62,35]"
+            />
+            <Label
+                id="header"
+                translation="[0,0]"
+                opacity="0.0"
+                font="font:SmallestBoldSystemFont"
+                wrap="true"
+                width="160"
+            />
+            <Label
+                id="footer1"
+                translation="[-10,180]"
+                opacity="0.0"
+                font="font:SmallestSystemFont"
+            />
+            <Label
+                id="footer2"
+                translation="[-10,210]"
+                opacity="0.0"
+                font="font:SmallestSystemFont"
+            />
+            <Label
+                id="footer3"
+                translation="[-10,240]"
+                opacity="0.0"
+                font="font:SmallestSystemFont"
+            />
+        </Group>
+    </children>
+
+</component>
