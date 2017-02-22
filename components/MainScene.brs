@@ -65,10 +65,10 @@ function onKeyEvent(key as String, press as Boolean) as Boolean
     result = false
     if press
         if key = "up"
-            resetDay("add")
+            resetDay("minus")
             result = true
         else if key = "down"
-            resetDay("minus")
+            resetDay("add")
             result = true
         else if key = "options"
             resetDay("today")
